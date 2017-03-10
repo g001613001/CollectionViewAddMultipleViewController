@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lth-aQ-1y4">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--VC1-->
+        <scene sceneID="KcD-bE-9w8">
+            <objects>
+                <viewController id="lth-aQ-1y4" customClass="VC1" customModule="CollectionViewAddMultipleViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cEU-lr-peU"/>
+                        <viewControllerLayoutGuide type="bottom" id="cmj-o5-MOd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z0c-ev-IGE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="lVo-5s-AfD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lVo-5s-AfD" firstAttribute="top" secondItem="z0c-ev-IGE" secondAttribute="top" id="RIo-yD-hka"/>
+                            <constraint firstItem="cmj-o5-MOd" firstAttribute="top" secondItem="lVo-5s-AfD" secondAttribute="bottom" id="dd0-cJ-VOI"/>
+                            <constraint firstAttribute="trailing" secondItem="lVo-5s-AfD" secondAttribute="trailing" id="hmo-Dz-6NI"/>
+                            <constraint firstItem="lVo-5s-AfD" firstAttribute="leading" secondItem="z0c-ev-IGE" secondAttribute="leading" id="xmv-Bf-Ugy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="lVo-5s-AfD" id="0lW-vC-aKy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p0l-6C-PQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="-188.45577211394306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="375" height="667"/>
+    </resources>
+</document>
